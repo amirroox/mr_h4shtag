@@ -5,18 +5,6 @@ from mr_h4shtag.core.logger import Logger
 from mr_h4shtag.core.config import Config
 
 class CLI:
-    BANNER = f"""
-{Fore.RED}███╗   ███╗██████╗         ██╗  ██╗██╗  ██╗███████╗██╗  ██╗████████╗ █████╗  ██████╗ {Style.RESET_ALL}
-{Fore.RED}████╗ ████║██╔══██╗        ██║  ██║██║  ██║██╔════╝██║  ██║╚══██╔══╝██╔══██╗██╔════╝ {Style.RESET_ALL}
-{Fore.RED}██╔████╔██║██████╔╝        ███████║███████║███████╗███████║   ██║   ███████║██║  ███╗{Style.RESET_ALL}
-{Fore.RED}██║╚██╔╝██║██╔══██╗        ██╔══██║╚════██║╚════██║██╔══██║   ██║   ██╔══██║██║   ██║{Style.RESET_ALL}
-{Fore.RED}██║ ╚═╝ ██║██║  ██║███████╗██║  ██║     ██║███████║██║  ██║   ██║   ██║  ██║╚██████╔╝{Style.RESET_ALL}
-{Fore.RED}╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ {Style.RESET_ALL}
-{Style.BRIGHT}{Fore.CYAN}                    Advanced Web Penetration Testing Framework{Style.RESET_ALL}
-{Style.BRIGHT}{Fore.YELLOW}                      Created by: Security Research Team{Style.RESET_ALL}
-{Style.BRIGHT}{Fore.GREEN}                      Version: 3.1.4 (Black Mamba){Style.RESET_ALL}
-"""
-
     @staticmethod
     def parse_args():
         init()  # Initialize colorama for cross-platform color support
