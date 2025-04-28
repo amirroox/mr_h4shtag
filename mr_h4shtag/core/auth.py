@@ -5,7 +5,7 @@ import time
 from datetime import datetime, timedelta
 from typing import Optional
 
-class Auth:
+class AuthManager:
     """Authentication handler for various auth methods"""
     
     def __init__(self, secret_key: Optional[str] = None):
