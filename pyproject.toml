@@ -19,3 +19,7 @@ dependencies = [
 
 [tool.setuptools]
 packages = ["mr_h4shtag", "mr_h4shtag.core", "mr_h4shtag.modules", "mr_h4shtag.modules.scanners"]
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
+python_paths = ["."]
