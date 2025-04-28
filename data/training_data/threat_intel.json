@@ -1,0 +1,12 @@
+{
+    "https://example.com": {
+        "cms": "WordPress",
+        "known_vulnerabilities": ["xss", "sqli"],
+        "last_seen": "2025-04-20"
+    },
+    "https://test.com": {
+        "cms": null,
+        "known_vulnerabilities": ["graphql"],
+        "last_seen": "2025-04-22"
+    }
+}

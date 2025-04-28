@@ -1,0 +1,15 @@
+requests
+beautifulsoup4
+fake-useragent
+websocket-client
+numpy
+tensorflow
+flask
+jinja2
+sphinx
+pytest
+cryptography
+celery
+boto3
+dnspython
+requests

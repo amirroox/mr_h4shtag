@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mr_h4shtag"
+version = "1.0.0"
+description = "A web vulnerability scanning tool"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+    "dnspython",
+    "pytest",
+    "cryptography",
+    "celery",
+    "boto3",
+]
+
+[tool.setuptools]
+packages = ["mr_h4shtag", "mr_h4shtag.core", "mr_h4shtag.modules", "mr_h4shtag.modules.scanners"]

@@ -1,0 +1,54 @@
+[
+    {
+        "target": "https://example.com",
+        "scanner": "xss",
+        "vulnerabilities": [
+            {
+                "category": "xss",
+                "vulnerability": "Reflected XSS",
+                "url": "https://example.com/search?q=test",
+                "payload": "<script>alert(1)</script>",
+                "severity": "high",
+                "confidence": "high",
+                "score": 0.85,
+                "remediation": "Implement input sanitization and CSP.",
+                "exploit_success": true
+            }
+        ],
+        "context": {
+            "cms": "WordPress",
+            "tech_stack": ["Apache"],
+            "api_endpoints": [],
+            "forms": 2
+        },
+        "reward": 0.8,
+        "context_key": "WordPress_0",
+        "scanners": ["xss", "sqli", "file_upload"]
+    },
+    {
+        "target": "https://test.com",
+        "scanner": "sqli",
+        "vulnerabilities": [
+            {
+                "category": "sqli",
+                "vulnerability": "SQL Injection",
+                "url": "https://test.com/login",
+                "payload": "' OR 1=1 --",
+                "severity": "critical",
+                "confidence": "medium",
+                "score": 0.95,
+                "remediation": "Use parameterized queries.",
+                "exploit_success": false
+            }
+        ],
+        "context": {
+            "cms": null,
+            "tech_stack": ["Nginx"],
+            "api_endpoints": ["https://test.com/api/v1"],
+            "forms": 1
+        },
+        "reward": 1.0,
+        "context_key": "unknown_1",
+        "scanners": ["sqli", "graphql", "cors"]
+    }
+]
