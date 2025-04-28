@@ -1,5 +1,5 @@
 import requests
-from ...core.logger import Logger
+from mr_h4shtag.core.logger import Logger
 
 class WAFDetector:
     def __init__(self, session, target):
