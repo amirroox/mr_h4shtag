@@ -1,8 +1,8 @@
 import time
 import random
 from websocket import create_connection
-from ...core.logger import Logger
-from ...core.database import DatabaseManager
+from mr_h4shtag.core.logger import Logger
+from mr_h4shtag.core.database import DatabaseManager
 
 class WebSocketScanner:
     def __init__(self, session, payloads, db_manager, stealth_mode=False, timeout=10):

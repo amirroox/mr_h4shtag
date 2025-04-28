@@ -1,8 +1,8 @@
 import subprocess
 import shutil
 import os
-from ...core.logger import Logger
-from ...core.config import Config
+from mr_h4shtag.core.logger import Logger
+from mr_h4shtag.core.config import Config
 
 class InfraScanner:
     def __init__(self, domain, output_dir, threads=10):

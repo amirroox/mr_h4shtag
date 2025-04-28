@@ -1,8 +1,8 @@
 import time
 import random
 from urllib.parse import urljoin
-from ...core.logger import Logger
-from ...core.database import DatabaseManager
+from mr_h4shtag.core.logger import Logger
+from mr_h4shtag.core.database import DatabaseManager
 
 class IDORScanner:
     def __init__(self, session, payloads, db_manager, base_url, stealth_mode=False, timeout=10):

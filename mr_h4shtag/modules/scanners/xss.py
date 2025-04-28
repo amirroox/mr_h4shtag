@@ -2,8 +2,8 @@ import time
 import random
 from urllib.parse import quote
 from bs4 import BeautifulSoup
-from ...core.logger import Logger
-from ...core.database import DatabaseManager
+from mr_h4shtag.core.logger import Logger
+from mr_h4shtag.core.database import DatabaseManager
 
 class XSSScanner:
     def __init__(self, session, payloads, db_manager, stealth_mode=False, timeout=10):
