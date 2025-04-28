@@ -12,4 +12,4 @@ cryptography
 celery
 boto3
 dnspython
-requests
+pyjwt
