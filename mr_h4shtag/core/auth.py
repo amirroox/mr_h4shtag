@@ -18,3 +18,8 @@ class AuthManager:
         elif self.auth_config.get('type') == 'basic':
             self.session.auth = (self.auth_config.get('username', ''), self.auth_config.get('password', ''))
         Logger.info(f"Authentication configured for {target}.")
+
+class Auth:
+    """Authentication functionality"""
+    def __init__(self):
+        pass

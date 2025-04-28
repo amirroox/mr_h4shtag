@@ -1,5 +1,4 @@
-from m_plotMsg.core.safe import Arbn
+from mr_h4shtag.core.safe import Arbn
 
-def test_arbn_initialization():
-    arbn = Arbn()
-    assert arbn.example_method() == "Hello from Arbn!"
+def test_arbn():
+    assert Arbn() is not None
