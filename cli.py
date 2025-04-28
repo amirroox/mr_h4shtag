@@ -1,8 +1,8 @@
 import argparse
 import sys
 from colorama import init, Fore, Style
-from ...core.logger import Logger
-from ...core.config import Config
+from mr_h4shtag.core.logger import Logger
+from mr_h4shtag.core.config import Config
 
 class CLI:
     BANNER = f"""
