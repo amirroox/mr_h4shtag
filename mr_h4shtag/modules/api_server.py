@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from mr_h4shtag.core.logger import Logger
 from mr_h4shtag.core.database import DatabaseManager
-from ..scanners.ai_scanner import AIScanner
+from mr_h4shtag.modules.scanners.ai_scanner import AIScanner
 from mr_h4shtag.utils.network import NetworkUtils
 
 class APIServer:

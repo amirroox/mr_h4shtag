@@ -11,25 +11,25 @@ from mr_h4shtag.modules.training import TrainingPipeline
 from mr_h4shtag.modules.visualization import VisualizationDashboard
 from mr_h4shtag.modules.cloud_storage import CloudStorage
 from mr_h4shtag.modules.threat_intel import ThreatIntelligence
-from .xss import XSSScanner
-from .sqli import SQLiScanner
-from .ssrf import SSRFScanner
-from .idor import IDORScanner
-from .rce import RCEScanner
-from .lfi import LFIScanner
-from .xxe import XXEScanner
-from .ssti import SSTIScanner
-from .redirect import RedirectScanner
-from .csrf import CSRFScanner
-from .auth_bypass import AuthBypassScanner
-from .file_upload import FileUploadScanner
-from .session_hijack import SessionHijackScanner
-from .brute_force import BruteForceScanner
-from .misconfig import MisconfigScanner
-from .cors import CORSScanner
-from .api_rate_limit import APIRateLimitScanner
-from .graphql import GraphQLScanner
-from .websocket import WebSocketScanner
+from mr_h4shtag.modules.scanners.xss import XSSScanner
+from mr_h4shtag.modules.scanners.sqli import SQLiScanner
+from mr_h4shtag.modules.scanners.ssrf import SSRFScanner
+from mr_h4shtag.modules.scanners.idor import IDORScanner
+from mr_h4shtag.modules.scanners.rce import RCEScanner
+from mr_h4shtag.modules.scanners.lfi import LFIScanner
+from mr_h4shtag.modules.scanners.xxe import XXEScanner
+from mr_h4shtag.modules.scanners.ssti import SSTIScanner
+from mr_h4shtag.modules.scanners.redirect import RedirectScanner
+from mr_h4shtag.modules.scanners.csrf import CSRFScanner
+from mr_h4shtag.modules.scanners.auth_bypass import AuthBypassScanner
+from mr_h4shtag.modules.scanners.file_upload import FileUploadScanner
+from mr_h4shtag.modules.scanners.session_hijack import SessionHijackScanner
+from mr_h4shtag.modules.scanners.brute_force import BruteForceScanner
+from mr_h4shtag.modules.scanners.misconfig import MisconfigScanner
+from mr_h4shtag.modules.scanners.cors import CORSScanner
+from mr_h4shtag.modules.scanners.api_rate_limit import APIRateLimitScanner
+from mr_h4shtag.modules.scanners.graphql import GraphQLScanner
+from mr_h4shtag.modules.scanners.websocket import WebSocketScanner
 
 class AIScanner:
     def __init__(self, session, db_manager, targets, stealth_mode=False, timeout=10, scenario="all", 
