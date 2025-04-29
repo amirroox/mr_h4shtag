@@ -3,7 +3,7 @@ import random
 import requests
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
-from ..core.logger import Logger
+from mr_h4shtag.core.logger import Logger
 
 class Crawler:
     def __init__(self, target, session, stealth_mode=False, timeout=10):
