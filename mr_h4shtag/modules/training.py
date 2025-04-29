@@ -3,6 +3,7 @@ import json
 from typing import Dict
 from mr_h4shtag.core.database import DatabaseManager
 from mr_h4shtag.core.logger import Logger
+from mr_h4shtag.modules import cloud_storage
 
 class TrainingPipeline:
     def __init__(self, db_manager: DatabaseManager):
@@ -10,7 +11,7 @@ class TrainingPipeline:
         self.data_dir = os.path.join('data', 'training_data')
         self.scan_data_file = os.path.join(self.data_dir, 'scan_data.json')
         os.makedirs(self.data_dir, exist_ok=True)
-        self.cloud_storage = CloudStorage()
+        self.cloud_storage = cloud_storage.CloudStorage()
         self.model = None
 
     def load_training_data(self):
